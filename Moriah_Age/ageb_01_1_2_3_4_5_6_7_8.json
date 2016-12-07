@@ -26,7 +26,6 @@
 ,{"name":"Frontal.OFC.R.120","net":"1","subnet":"111","color":"#DC9390","imports":["Temporal.MTL.R.130"],"value":["neg"]}
 ,{"name":"Frontal.OFC.R.150","net":"1","subnet":"111","color":"#DC9390","imports":["Parietal.PCC.M.167","Occipital.VAC.L.171","Frontal.OFC.R.186"],"value":["pos","neg","pos"]}
 ,{"name":"Frontal.OFC.R.186","net":"1","subnet":"111","color":"#DC9390","imports":["Frontoparietal.CEN.L.194"],"value":["neg"]}
-,{"name":"Frontal.PCC.M.52","net":"1","subnet":"112","color":"#DC9390","imports":["Frontoparietal.CEN.R.96"],"value":["neg"]}
 ,{"name":"Frontal.PRE.L.27","net":"1","subnet":"113","color":"#DC9390","imports":["Parietal.SPL.R.156"],"value":["neg"]}
 ,{"name":"Frontal.PRE.L.147","net":"1","subnet":"113","color":"#DC9390","imports":["Temporal.ITG.R.153","Occipital.VAC.R.157","Occipital.VAC.L.171"],"value":["neg","neg","neg"]}
 ,{"name":"Frontal.PRE.L.178","net":"1","subnet":"113","color":"#DC9390","imports":[],"value":[]}
@@ -81,6 +80,7 @@
 ,{"name":"Parietal.POST.R.123","net":"3","subnet":"305","color":"#8FACD4","imports":["Insula.STG.R.132","Occipital.VAC.R.166","Insula.INS.R.168"],"value":["pos","pos","pos"]}
 ,{"name":"Parietal.POST.R.184","net":"3","subnet":"305","color":"#8FACD4","imports":[],"value":[]}
 ,{"name":"Parietal.PCC.L.164","net":"3","subnet":"306","color":"#8FACD4","imports":["Temporal.ITG.L.165"],"value":["neg"]}
+,{"name":"Parietal.PCC.M.52","net":"3","subnet":"307","color":"#8FACD4","imports":["Frontoparietal.CEN.R.96"],"value":["neg"]}
 ,{"name":"Parietal.PCC.M.90","net":"3","subnet":"307","color":"#8FACD4","imports":["Frontal.mPFC.M.97","Frontal.BG.L.124","Frontal.mPFC.L.143"],"value":["pos","neg","pos"]}
 ,{"name":"Parietal.PCC.M.167","net":"3","subnet":"307","color":"#8FACD4","imports":[],"value":[]}
 ,{"name":"Parietal.PCC.R.35","net":"3","subnet":"308","color":"#8FACD4","imports":[],"value":[]}
