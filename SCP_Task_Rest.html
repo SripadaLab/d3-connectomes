@@ -69,7 +69,7 @@ path.arc {
   </head>
   <body>
     <h2>
-      Mindfulness 
+      Rest and Continuous Performance Task
     </h2>
 	<h3 name="componentnum">
 	Component
@@ -78,9 +78,9 @@ path.arc {
 	<!--tension: <input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"><br/>-->
 	
 	Component:
-	<input type="radio" name="component" value="01" onclick="updateData()" autocomplete="off">1 
-	<input type="radio" name="component" value="02" onclick="updateData()" autocomplete="off">2 
-	<input type="radio" name="component" value="03" onclick="updateData()" autocomplete="off">3 
+	<input type="radio" name="component" value="01" onclick="updateData()" autocomplete="off" placeholder="Rest">Rest 
+	<input type="radio" name="component" value="02" onclick="updateData()" autocomplete="off" placeholder="Task">Task
+	<!--<input type="radio" name="component" value="03" onclick="updateData()" autocomplete="off">3 
 	<input type="radio" name="component" value="04" onclick="updateData()" autocomplete="off">4 
 	<input type="radio" name="component" value="05" onclick="updateData()" autocomplete="off">5 
 	<input type="radio" name="component" value="06" onclick="updateData()" autocomplete="off">6 
@@ -92,26 +92,27 @@ path.arc {
 	<input type="radio" name="component" value="12" onclick="updateData()" autocomplete="off">12 
 	<input type="radio" name="component" value="13" onclick="updateData()" autocomplete="off">13 
 	<input type="radio" name="component" value="14" onclick="updateData()" autocomplete="off">14 
-	<input type="radio" name="component" value="15" onclick="updateData()" autocomplete="off">15 <br/>
+	<input type="radio" name="component" value="15" onclick="updateData()" autocomplete="off">15-->
+	<br/>
 	
 	Hide Networks:
-	<input type="checkbox" name="network" value="1" onclick="updateData()" autocomplete="off">1
-	<input type="checkbox" name="network" value="2" onclick="updateData()" autocomplete="off">2
-	<input type="checkbox" name="network" value="3" onclick="updateData()" autocomplete="off">3
-	<input type="checkbox" name="network" value="4" onclick="updateData()" autocomplete="off">4
-	<input type="checkbox" name="network" value="5" onclick="updateData()" autocomplete="off">5
-	<input type="checkbox" name="network" value="6" onclick="updateData()" autocomplete="off">6
-	<input type="checkbox" name="network" value="7" onclick="updateData()" autocomplete="off">7 <br/>
+	<input type="checkbox" name="network" value="1" onclick="updateData()" autocomplete="off">VN
+	<input type="checkbox" name="network" value="2" onclick="updateData()" autocomplete="off">SMN
+	<input type="checkbox" name="network" value="3" onclick="updateData()" autocomplete="off">DAN
+	<input type="checkbox" name="network" value="4" onclick="updateData()" autocomplete="off">VAN
+	<input type="checkbox" name="network" value="5" onclick="updateData()" autocomplete="off">LN
+	<input type="checkbox" name="network" value="6" onclick="updateData()" autocomplete="off">FPN
+	<input type="checkbox" name="network" value="7" onclick="updateData()" autocomplete="off">DMN <br/>
 	
 	<input type="checkbox" name="flip" value="-1" onclick="updateData()" autocomplete="off">Flip sign?
 	<br/>
 	<input type="checkbox" name="removenetworks" value="-1" onclick="updateData()" autocomplete="off">Remove Network Names?
 	<br/>
 	
-	<select id="threshold" onchange="updateData()">
-		<option value=3>3</option>
-		<option value=4>4</option>
-		<option value=5>5</option>
+	Z Threshold: <select id="threshold" onchange="updateData()">
+		<option value="3">3</option>
+		<option value="4" selected>4</option>
+		<option value="5">5</option>
 	</select>
 	<br/>
 	
@@ -126,8 +127,8 @@ path.arc {
 		if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
 		return decodeURIComponent(name[1]);
 	}
-var w = 1024,
-    h = 768,
+var w = 1280,
+    h = 1024,
     rx = w / 2,
     ry = h / 2,
     m0,
@@ -237,10 +238,12 @@ function updateData() {
 	}
 	
 	var radios = document.getElementsByName('component');
-
+	var componentname = "Rest";
+	
 	for (var i = 0, length = radios.length; i < length; i++) {
 		if (radios[i].checked) {
 			componentnum = radios[i].value;
+			componentname = radios[i].placeholder;
 			break;
 		}
 	}	
@@ -265,7 +268,7 @@ function updateData() {
 	var threshold = thresh.value;
 	
 	filename = "SCP_Task_Rest/Comp" + componentnum + "_1_" + threshold + "_1_2_3_4_5_6_7.json";
-	document.getElementsByName('componentnum')[0].innerHTML = "Component " + componentnum;
+	document.getElementsByName('componentnum')[0].innerHTML = "Component " + componentname;
 	//window.alert(filename);
 	svg.selectAll("path.link").remove();
 	svg.selectAll("g.node").remove();
