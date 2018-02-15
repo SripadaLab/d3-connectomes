@@ -78,8 +78,8 @@ path.arc {
 	<!--tension: <input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"><br/>-->
 	
 	Component:
-	<input type="radio" name="component" value="01" onclick="updateData()" autocomplete="off" placeholder="Rest">Rest 
-	<input type="radio" name="component" value="02" onclick="updateData()" autocomplete="off" placeholder="Task">Task
+	<input type="radio" name="component" value="01" onclick="updateData()" autocomplete="off" placeholder="01">01 
+	<!--<input type="radio" name="component" value="02" onclick="updateData()" autocomplete="off" placeholder="Task">Task
 	<!--<input type="radio" name="component" value="03" onclick="updateData()" autocomplete="off">3 
 	<input type="radio" name="component" value="04" onclick="updateData()" autocomplete="off">4 
 	<input type="radio" name="component" value="05" onclick="updateData()" autocomplete="off">5 
@@ -110,8 +110,9 @@ path.arc {
 	<br/>
 	
 	Z Threshold: <select id="threshold" onchange="updateData()">
-		<option value="3">3</option>
-		<option value="4" selected>4</option>
+		<option value="2">2</option>
+		<option value="3" selected>3</option>
+		<option value="4">4</option>
 		<option value="5">5</option>
 	</select>
 	<br/>
@@ -267,7 +268,7 @@ function updateData() {
 	var thresh = document.getElementById('threshold');
 	var threshold = thresh.value;
 	
-	filename = "SCP_Task_Rest/Comp" + componentnum + "_1_" + threshold + "_1_2_3_4_5_6_7.json";
+	filename = "YouthMegaSample/Comp" + componentnum + "_1_" + threshold + "_1_2_3_4_5_6_7.json";
 	document.getElementsByName('componentnum')[0].innerHTML = "Component " + componentname;
 	//window.alert(filename);
 	svg.selectAll("path.link").remove();
