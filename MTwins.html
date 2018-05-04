@@ -78,10 +78,10 @@ path.arc {
 	<!--tension: <input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"><br/>-->
 	
 	Component:
+	<input type="radio" name="component" value="01" onclick="updateData()" autocomplete="off" placeholder="01">01 
+	<input type="radio" name="component" value="02" onclick="updateData()" autocomplete="off" placeholder="02">02 
+	<input type="radio" name="component" value="03" onclick="updateData()" autocomplete="off" placeholder="03">03 
 	<input type="radio" name="component" value="04" onclick="updateData()" autocomplete="off" placeholder="04">04 
-	<input type="radio" name="component" value="05" onclick="updateData()" autocomplete="off" placeholder="05">05 
-	<input type="radio" name="component" value="22" onclick="updateData()" autocomplete="off" placeholder="22">22 
-	<input type="radio" name="component" value="32" onclick="updateData()" autocomplete="off" placeholder="32">32 
 
 	<br/>
 	
@@ -223,7 +223,7 @@ function updateData() {
 	if (get("skipnets")!=null) {
 		skipnets = get("skipnets").split(",");
 	}
-	componentnum = '01';
+	componentnum = '04';
 	if (get("componentnum")!=null) {
 		componentnum = zeroPad(get("componentnum"),2);
 	}
