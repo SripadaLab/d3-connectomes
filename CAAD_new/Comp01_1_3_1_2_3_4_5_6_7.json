@@ -1,3 +1,4 @@
+[
 {"name":"Visual.FUS.L.161","net":"1","subnet":"101","color":"#7B2CCD","imports":["DefaultMode.dmPFC.L.775","VentralAttention.SMA.L.878","VentralAttention.SMA.L.888","Visual.SOC.L.909","DorsalAttention.PRE.R.970","DorsalAttention.PRE.L.975","Frontoparietal.slPFC.R.980","VentralAttention.SMA.R.981"],"value":["pos","pos","pos","pos","pos","pos","pos","pos"]}
 ,{"name":"Visual.FUS.L.171","net":"1","subnet":"101","color":"#7B2CCD","imports":["Frontoparietal.vlPFC.R.345","Somatomotor.POST.R.716","Frontoparietal.MCC.L.754","VentralAttention.SMA.L.764","DorsalAttention.PRE.R.873"],"value":["pos","pos","pos","pos","pos"]}
 ,{"name":"Visual.FUS.L.260","net":"1","subnet":"101","color":"#7B2CCD","imports":["Visual.CNS.R.673","Frontoparietal.dlPFC.R.875","Frontoparietal.slPFC.R.979","DefaultMode.dmPFC.L.993","Frontoparietal.slPFC.R.1058"],"value":["pos","pos","pos","pos","pos"]}
