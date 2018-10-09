@@ -1,33 +1,5 @@
 [
-{"name":"Uncertain.LNG.1","net":"14","subnet":"0","color":"#FFFFFF","imports":["Uncertain.LNG.2"],"value":["pos"]}
-,{"name":"Uncertain.LNG.2","net":"14","subnet":"0","color":"#FFFFFF","imports":["Default.SFG.101","Default.MTG.117","Visual.iLOC.153"],"value":["pos","pos","pos"]}
-,{"name":"Uncertain.OFC.3","net":"14","subnet":"0","color":"#B3B3B3","imports":["Cingulo-opercular.COC.56","Cingulo-opercular.TP.58","Cingulo-opercular.ACC.59","Cingulo-opercular.INS.60","Default.ACC.113","Default.PCG.122","Visual.iLOC.168","Fronto-parietal.IFG.179","Fronto-parietal.OFC.189","Fronto-parietal.ANG.191","Salience.SMG.204","Salience.IFG.207","Salience.INS.209","Salience.INS.211","Salience.ACC.212","Salience.PCG.213","Salience.MFG.214","Salience.ACC.215","Salience.PCG.216","Salience.ACC.217","Salience.MFG.218","Salience.MFG.219","Salience.MFG.220","Memory Retrieval.PCC.221","Ventral Attention.MTG.239","Dorsal Attention.sLOC.260"],"value":["pos","pos","pos","pos","pos","pos","pos","neg","pos","neg","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","neg"]}
-,{"name":"Uncertain.pMTG.4","net":"14","subnet":"0","color":"#FFFFFF","imports":["Uncertain.pMTG.84","Default.SFG.98","Default.SFG.99","Default.SFG.114","Default.MTG.118","Default.MTG.120","Fronto-parietal.ANG.177","Fronto-parietal.PRE.202","Ventral Attention.IFG.242"],"value":["pos","pos","pos","pos","pos","pos","pos","pos","pos"]}
-,{"name":"Uncertain.aITG.5","net":"14","subnet":"0","color":"#FFFFFF","imports":["Uncertain.aITG.12","Default.PCN.88","Default.SFG.103","Default.PCG.105","Default.SFG.106","Default.MTG.116"],"value":["neg","neg","neg","neg","neg","neg"]}
-,{"name":"Uncertain.pPHG.6","net":"14","subnet":"0","color":"#B3B3B3","imports":[],"value":[]}
-,{"name":"Uncertain.pPHG.7","net":"14","subnet":"0","color":"#B3B3B3","imports":["Default.MTG.123","Ventral Attention.SMG.240"],"value":["pos","pos"]}
-,{"name":"Uncertain.FUS.8","net":"14","subnet":"0","color":"#FFFFFF","imports":["Uncertain.pMTG.84","Uncertain.FUS.248"],"value":["pos","pos"]}
-,{"name":"Uncertain.pMTG.9","net":"14","subnet":"0","color":"#FFFFFF","imports":["Default.MTG.83","Default.PCN.88","Default.PCC.91","Fronto-parietal.ANG.194"],"value":["neg","neg","neg","neg"]}
-,{"name":"Uncertain.pMTG.10","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Uncertain.pMTG.11","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Uncertain.aITG.12","net":"14","subnet":"0","color":"#FFFFFF","imports":["Cingulo-opercular.INS.57","Cingulo-opercular.TP.58","Cingulo-opercular.ACC.59","Cingulo-opercular.INS.60","Default.ANG.80","Default.PCC.94","Default.PCG.107","Default.PCG.108","Default.PCG.110","Default.ACC.111","Default.PCG.112","Default.ACC.113","Default.PCG.115","Default.PCG.122","Fronto-parietal.MFG.175","Fronto-parietal.ANG.194","Fronto-parietal.PRE.202","Salience.SMG.204","Salience.INS.208","Salience.INS.211","Salience.ACC.212","Salience.MFG.214","Salience.ACC.215","Salience.ACC.217","Salience.MFG.219","Salience.MFG.220","Dorsal Attention.MTG.252"],"value":["pos","pos","pos","pos","neg","pos","pos","pos","pos","pos","pos","pos","pos","pos","neg","neg","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos"]}
-,{"name":"Uncertain.pMTG.84","net":"14","subnet":"0","color":"#FFFFFF","imports":["Uncertain.OFC.85","Default.PCN.89","Default.PCC.92","Default.PCN.93","Default.PCN.95","Default.MFG.100","Default.SFG.101","Default.PCG.105","Default.PCG.107","Default.PCG.108","Default.PCG.110","Default.ACC.111","Default.SFG.114","Visual.iLOC.154","Visual.CN.159","Visual.CN.166","Fronto-parietal.MFG.201","Salience.PRE.205","Salience.MFG.219","Memory Retrieval.PCC.221","Subcortical.THAL.234","Ventral Attention.SMG.235","Ventral Attention.MTG.238","Dorsal Attention.MTG.252","Uncertain.pMTG.253"],"value":["neg","neg","neg","neg","neg","pos","neg","neg","neg","neg","neg","neg","pos","pos","neg","neg","pos","neg","neg","neg","neg","neg","neg","pos","pos"]}
-,{"name":"Uncertain.OFC.85","net":"14","subnet":"0","color":"#B3B3B3","imports":["Default.MTG.118","Uncertain.OFC.132","Fronto-parietal.ANG.177","Fronto-parietal.ANG.195","Fronto-parietal.MFG.198","Ventral Attention.IFG.242"],"value":["neg","neg","neg","neg","neg","neg"]}
-,{"name":"Uncertain.OFC.132","net":"14","subnet":"0","color":"#B3B3B3","imports":["Salience.PRE.205","Ventral Attention.SMG.235","Ventral Attention.MTG.238","Dorsal Attention.MTG.252"],"value":["neg","neg","neg","pos"]}
-,{"name":"Uncertain.CALC.140","net":"14","subnet":"0","color":"#B3B3B3","imports":[],"value":[]}
-,{"name":"Uncertain.LNG.141","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Uncertain.CALC.142","net":"14","subnet":"0","color":"#B3B3B3","imports":["Visual.IC.145","Visual.IC.146","Visual.OP.149","Visual.LNG.151","Visual.IC.152","Visual.IC.170","Visual.FUS.172"],"value":["pos","pos","pos","pos","pos","pos","pos"]}
-,{"name":"Uncertain.aITG.182","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Uncertain.CERE.183","net":"14","subnet":"0","color":"#B3B3B3","imports":[],"value":[]}
-,{"name":"Uncertain.CERE.184","net":"14","subnet":"0","color":"#B3B3B3","imports":["Uncertain.CERE.185","Salience.PRE.205","Dorsal Attention.MTG.252","Uncertain.pMTG.253"],"value":["pos","neg","pos","pos"]}
-,{"name":"Uncertain.CERE.185","net":"14","subnet":"0","color":"#B3B3B3","imports":["Salience.MFG.219"],"value":["neg"]}
-,{"name":"Uncertain.FUS.247","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Uncertain.FUS.248","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Uncertain.pITG.249","net":"14","subnet":"0","color":"#B3B3B3","imports":["Uncertain.pITG.250"],"value":["neg"]}
-,{"name":"Uncertain.pITG.250","net":"14","subnet":"0","color":"#B3B3B3","imports":["Dorsal Attention.MTG.252"],"value":["pos"]}
-,{"name":"Uncertain.pMTG.253","net":"14","subnet":"0","color":"#FFFFFF","imports":["Uncertain.pMTG.254"],"value":["neg"]}
-,{"name":"Uncertain.pMTG.254","net":"14","subnet":"0","color":"#FFFFFF","imports":[],"value":[]}
-,{"name":"Somatomotor Hand.PCC.14","net":"1","subnet":"101","color":"#00B3B3","imports":["Ventral Attention.MTG.238"],"value":["pos"]}
+{"name":"Somatomotor Hand.PCC.14","net":"1","subnet":"101","color":"#00B3B3","imports":["Ventral Attention.MTG.238"],"value":["pos"]}
 ,{"name":"Somatomotor Hand.POST.18","net":"1","subnet":"102","color":"#00FFFF","imports":["Somatomotor Hand.POST.23","Somatomotor Hand.PRE.35"],"value":["neg","neg"]}
 ,{"name":"Somatomotor Hand.POST.19","net":"1","subnet":"102","color":"#00FFFF","imports":["Somatomotor Hand.PRE.35"],"value":["neg"]}
 ,{"name":"Somatomotor Hand.POST.22","net":"1","subnet":"102","color":"#00FFFF","imports":["Cingulo-opercular.SFG.53","Cingulo-opercular.COC.56","Cingulo-opercular.INS.57","Cingulo-opercular.TP.58","Auditory.POST.72"],"value":["pos","pos","pos","pos","pos"]}
@@ -263,4 +235,32 @@
 ,{"name":"Cerebellum.ul.244","net":"13","subnet":"1300","color":"#80FFFF","imports":[],"value":[]}
 ,{"name":"Cerebellum.ul.245","net":"13","subnet":"1300","color":"#80FFFF","imports":[],"value":[]}
 ,{"name":"Cerebellum.ul.246","net":"13","subnet":"1300","color":"#80FFFF","imports":[],"value":[]}
+,{"name":"Uncertain.OFC.3","net":"14","subnet":"1401","color":"#5E5E5E","imports":["Cingulo-opercular.COC.56","Cingulo-opercular.TP.58","Cingulo-opercular.ACC.59","Cingulo-opercular.INS.60","Default.ACC.113","Default.PCG.122","Visual.iLOC.168","Fronto-parietal.IFG.179","Fronto-parietal.OFC.189","Fronto-parietal.ANG.191","Salience.SMG.204","Salience.IFG.207","Salience.INS.209","Salience.INS.211","Salience.ACC.212","Salience.PCG.213","Salience.MFG.214","Salience.ACC.215","Salience.PCG.216","Salience.ACC.217","Salience.MFG.218","Salience.MFG.219","Salience.MFG.220","Memory Retrieval.PCC.221","Ventral Attention.MTG.239","Dorsal Attention.sLOC.260"],"value":["pos","pos","pos","pos","pos","pos","pos","neg","pos","neg","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","neg"]}
+,{"name":"Uncertain.OFC.85","net":"14","subnet":"1401","color":"#5E5E5E","imports":["Default.MTG.118","Uncertain.OFC.132","Fronto-parietal.ANG.177","Fronto-parietal.ANG.195","Fronto-parietal.MFG.198","Ventral Attention.IFG.242"],"value":["neg","neg","neg","neg","neg","neg"]}
+,{"name":"Uncertain.OFC.132","net":"14","subnet":"1401","color":"#5E5E5E","imports":["Salience.PRE.205","Ventral Attention.SMG.235","Ventral Attention.MTG.238","Dorsal Attention.MTG.252"],"value":["neg","neg","neg","pos"]}
+,{"name":"Uncertain.aITG.5","net":"14","subnet":"1402","color":"#AAAAAA","imports":["Uncertain.aITG.12","Default.PCN.88","Default.SFG.103","Default.PCG.105","Default.SFG.106","Default.MTG.116"],"value":["neg","neg","neg","neg","neg","neg"]}
+,{"name":"Uncertain.aITG.12","net":"14","subnet":"1402","color":"#AAAAAA","imports":["Cingulo-opercular.INS.57","Cingulo-opercular.TP.58","Cingulo-opercular.ACC.59","Cingulo-opercular.INS.60","Default.ANG.80","Default.PCC.94","Default.PCG.107","Default.PCG.108","Default.PCG.110","Default.ACC.111","Default.PCG.112","Default.ACC.113","Default.PCG.115","Default.PCG.122","Fronto-parietal.MFG.175","Fronto-parietal.ANG.194","Fronto-parietal.PRE.202","Salience.SMG.204","Salience.INS.208","Salience.INS.211","Salience.ACC.212","Salience.MFG.214","Salience.ACC.215","Salience.ACC.217","Salience.MFG.219","Salience.MFG.220","Dorsal Attention.MTG.252"],"value":["pos","pos","pos","pos","neg","pos","pos","pos","pos","pos","pos","pos","pos","pos","neg","neg","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos","pos"]}
+,{"name":"Uncertain.aITG.182","net":"14","subnet":"1402","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.pITG.249","net":"14","subnet":"1403","color":"#5E5E5E","imports":["Uncertain.pITG.250"],"value":["neg"]}
+,{"name":"Uncertain.pITG.250","net":"14","subnet":"1403","color":"#5E5E5E","imports":["Dorsal Attention.MTG.252"],"value":["pos"]}
+,{"name":"Uncertain.pMTG.4","net":"14","subnet":"1404","color":"#AAAAAA","imports":["Uncertain.pMTG.84","Default.SFG.98","Default.SFG.99","Default.SFG.114","Default.MTG.118","Default.MTG.120","Fronto-parietal.ANG.177","Fronto-parietal.PRE.202","Ventral Attention.IFG.242"],"value":["pos","pos","pos","pos","pos","pos","pos","pos","pos"]}
+,{"name":"Uncertain.pMTG.9","net":"14","subnet":"1404","color":"#AAAAAA","imports":["Default.MTG.83","Default.PCN.88","Default.PCC.91","Fronto-parietal.ANG.194"],"value":["neg","neg","neg","neg"]}
+,{"name":"Uncertain.pMTG.10","net":"14","subnet":"1404","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.pMTG.11","net":"14","subnet":"1404","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.pMTG.84","net":"14","subnet":"1404","color":"#AAAAAA","imports":["Uncertain.OFC.85","Default.PCN.89","Default.PCC.92","Default.PCN.93","Default.PCN.95","Default.MFG.100","Default.SFG.101","Default.PCG.105","Default.PCG.107","Default.PCG.108","Default.PCG.110","Default.ACC.111","Default.SFG.114","Visual.iLOC.154","Visual.CN.159","Visual.CN.166","Fronto-parietal.MFG.201","Salience.PRE.205","Salience.MFG.219","Memory Retrieval.PCC.221","Subcortical.THAL.234","Ventral Attention.SMG.235","Ventral Attention.MTG.238","Dorsal Attention.MTG.252","Uncertain.pMTG.253"],"value":["neg","neg","neg","neg","neg","pos","neg","neg","neg","neg","neg","neg","pos","pos","neg","neg","pos","neg","neg","neg","neg","neg","neg","pos","pos"]}
+,{"name":"Uncertain.pMTG.253","net":"14","subnet":"1404","color":"#AAAAAA","imports":["Uncertain.pMTG.254"],"value":["neg"]}
+,{"name":"Uncertain.pMTG.254","net":"14","subnet":"1404","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.CERE.183","net":"14","subnet":"1405","color":"#5E5E5E","imports":[],"value":[]}
+,{"name":"Uncertain.CERE.184","net":"14","subnet":"1405","color":"#5E5E5E","imports":["Uncertain.CERE.185","Salience.PRE.205","Dorsal Attention.MTG.252","Uncertain.pMTG.253"],"value":["pos","neg","pos","pos"]}
+,{"name":"Uncertain.CERE.185","net":"14","subnet":"1405","color":"#5E5E5E","imports":["Salience.MFG.219"],"value":["neg"]}
+,{"name":"Uncertain.LNG.1","net":"14","subnet":"1406","color":"#AAAAAA","imports":["Uncertain.LNG.2"],"value":["pos"]}
+,{"name":"Uncertain.LNG.2","net":"14","subnet":"1406","color":"#AAAAAA","imports":["Default.SFG.101","Default.MTG.117","Visual.iLOC.153"],"value":["pos","pos","pos"]}
+,{"name":"Uncertain.LNG.141","net":"14","subnet":"1406","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.CALC.140","net":"14","subnet":"1407","color":"#5E5E5E","imports":[],"value":[]}
+,{"name":"Uncertain.CALC.142","net":"14","subnet":"1407","color":"#5E5E5E","imports":["Visual.IC.145","Visual.IC.146","Visual.OP.149","Visual.LNG.151","Visual.IC.152","Visual.IC.170","Visual.FUS.172"],"value":["pos","pos","pos","pos","pos","pos","pos"]}
+,{"name":"Uncertain.FUS.8","net":"14","subnet":"1408","color":"#AAAAAA","imports":["Uncertain.pMTG.84","Uncertain.FUS.248"],"value":["pos","pos"]}
+,{"name":"Uncertain.FUS.247","net":"14","subnet":"1408","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.FUS.248","net":"14","subnet":"1408","color":"#AAAAAA","imports":[],"value":[]}
+,{"name":"Uncertain.pPHG.6","net":"14","subnet":"1409","color":"#5E5E5E","imports":[],"value":[]}
+,{"name":"Uncertain.pPHG.7","net":"14","subnet":"1409","color":"#5E5E5E","imports":["Default.MTG.123","Ventral Attention.SMG.240"],"value":["pos","pos"]}
 ]
