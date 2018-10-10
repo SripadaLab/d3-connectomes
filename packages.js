@@ -54,11 +54,11 @@
 
       // For each import, construct a link from the source to target node.
       nodes.forEach(function(d) {
-		var idx = 0;
-        if (d.imports) d.imports.forEach(function(i) {
+		//var idx = 0;
+        if (d.imports) d.imports.forEach(function(i,idx) {
 			if (map[i]) {
 			//if (map[d.name].net != map[i].net) {
-          imports.push({source: map[d.name], target: map[i], color: d.value[idx++], sourcesubnet: d.subnet, targetsubnet: map[i].subnet});
+          imports.push({source: map[d.name], target: map[i], color: d.value[idx], sourcesubnet: d.subnet, targetsubnet: map[i].subnet});
 		  //}
 		  }
         });
