@@ -18,7 +18,7 @@
 				node.subnetstring = node.parent.name;
 				if (removenetworks==-1) {
 					//grab first portion of name and remove it 
-					var tempname = name.substring(0,i=name.indexOf(".")+1);
+					var tempname = name.substring(0,i=name.indexOf(".",2)+1);
 					node.subnetstring = node.subnetstring.replace(tempname,"");
 				}
 			}
@@ -43,7 +43,7 @@
     },
 
     // Return a list of imports for the given array of nodes.
-    imports: function(nodes) {
+    imports: function(nodes,removeintra) {
       var map = {},
           imports = [];
 
@@ -58,7 +58,9 @@
         if (d.imports) d.imports.forEach(function(i,idx) {
 			if (map[i]) {
 			//if (map[d.name].net != map[i].net) {
-          imports.push({source: map[d.name], target: map[i], color: d.value[idx], sourcesubnet: d.subnet, targetsubnet: map[i].subnet});
+				if (removeintra==1 | d.net != map[i].net) {
+					imports.push({source: map[d.name], target: map[i], color: d.value[idx], sourcesubnet: d.subnet, targetsubnet: map[i].subnet});
+				}
 		  //}
 		  }
         });
