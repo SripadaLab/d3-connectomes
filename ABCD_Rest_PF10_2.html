@@ -282,7 +282,7 @@ function updateData() {
 	document.getElementsByName('componentnum')[0].innerHTML = "Component " + componentname;
 	//window.alert(filename);
 	svg.selectAll("path.link").remove();
-	svg.selectAll("g.node").remove();
+	svg.selectAll("g.node").remove(); 
 	
 	d3.json(filename, function(classes) {
 	  var nodes = cluster.nodes(packages.root(classes,skipnets,skipsubnets,removenetworks)),
