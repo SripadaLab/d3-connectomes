@@ -69,48 +69,30 @@ path.arc {
   </head>
   <body>
     <h2>
-      ABCD PF10 PC prediction Consensus
+      CAAD GADvHCN44
     </h2>
 	<h3 name="componentnum">
-	PC1
-	</h3>
-	<h3 name="nodeid">
-	temp
+	Group Results
 	</h3>
     <div style="position:absolute;top:0;right:0;font-size:18px;">
 	<!--tension: <input style="position:relative;top:3px;" type="range" min="0" max="100" value="85"><br/>-->
 	
-	PC:
-	<input type="radio" name="component" value="1" onclick="updateData()" autocomplete="off" placeholder="1">PC1 
-	<input type="radio" name="component" value="2" onclick="updateData()" autocomplete="off" placeholder="2">PC2 
-	<input type="radio" name="component" value="3" onclick="updateData()" autocomplete="off" placeholder="3">PC3
+	Component:
+	<input type="radio" name="component" value="01" onclick="updateData()" autocomplete="off" placeholder="01">01 
 	<br/>
 	
 	Hide Networks:
-	<input type="checkbox" name="network" value="1" onclick="updateData()" autocomplete="off">FPN
-	<input type="checkbox" name="network" value="2" onclick="updateData()" autocomplete="off">SAL
-	<input type="checkbox" name="network" value="3" onclick="updateData()" autocomplete="off">CingOper
+	<input type="checkbox" name="network" value="1" onclick="updateData()" autocomplete="off">VN
+	<input type="checkbox" name="network" value="2" onclick="updateData()" autocomplete="off">SMN
+	<input type="checkbox" name="network" value="3" onclick="updateData()" autocomplete="off">DAN
 	<input type="checkbox" name="network" value="4" onclick="updateData()" autocomplete="off">VAN
-	<input type="checkbox" name="network" value="5" onclick="updateData()" autocomplete="off">DAN
-	<input type="checkbox" name="network" value="6" onclick="updateData()" autocomplete="off">DMN
-	<input type="checkbox" name="network" value="7" onclick="updateData()" autocomplete="off">MemRet
-	<br/>
-	<input type="checkbox" name="network" value="8" onclick="updateData()" autocomplete="off">Aud
-	<input type="checkbox" name="network" value="9" onclick="updateData()" autocomplete="off">SMN Hand
-	<input type="checkbox" name="network" value="10" onclick="updateData()" autocomplete="off">SMN Face
-	<input type="checkbox" name="network" value="11" onclick="updateData()" autocomplete="off">Vis
-	<input type="checkbox" name="network" value="12" onclick="updateData()" autocomplete="off">Sub
-	<input type="checkbox" name="network" value="13" onclick="updateData()" autocomplete="off">CERE 
-	<input type="checkbox" name="network" value="14" onclick="updateData()" autocomplete="off">Uncertain
-	
-	<br/>
-	<br/>
+	<input type="checkbox" name="network" value="5" onclick="updateData()" autocomplete="off">LN
+	<input type="checkbox" name="network" value="6" onclick="updateData()" autocomplete="off">FPN
+	<input type="checkbox" name="network" value="7" onclick="updateData()" autocomplete="off">DMN <br/>
 	
 	<input type="checkbox" name="flip" value="-1" onclick="updateData()" autocomplete="off">Flip sign?
 	<br/>
 	<input type="checkbox" name="removenetworks" value="-1" onclick="updateData()" autocomplete="off">Remove Network Names?
-	<br/>
-	<input type="checkbox" name="removeintra" value="-1" onclick="updateData()" autocomplete="off">Remove Intranetwork?
 	<br/>
 	
 	<br/>
@@ -137,10 +119,9 @@ var loffset=0,
 	noffset=0,
 	flip=1,
 	removenetworks=1,
-	skipnets = [],
-	skipsubnets = [],
-	removeintra=1;
-	
+	skipnets = ["12"],
+	skipsubnets = ["709","710"];
+
 var splines = [];
 
 var cluster = d3.layout.cluster()
@@ -152,7 +133,7 @@ var bundle = d3.layout.bundle();
 
 var line = d3.svg.line.radial()
     .interpolate("bundle")
-    .tension(.7)
+    .tension(.85)
     .radius(function(d) { return d.y; })
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
@@ -187,7 +168,7 @@ mystylesheet = document.styleSheets[2];
 
 mystylesheet.insertRule(".color-pos { stroke: #FF0000; opacity: 0.5; }",0);
 mystylesheet.insertRule(".color-neg { stroke: #0000FF; opacity: 0.5; }",1);
-mystylesheet.insertRule(".fade {opacity: 0.5;}",2);
+mystylesheet.insertRule(".fade {opacity: 0.1;}",2);
 
 function updateData() {
 	if (get("removenetworks")!=null) {
@@ -203,17 +184,6 @@ function updateData() {
 		flip = -1;
 	} else {
 		flip = 1;
-	}
-	
-	var intrabox = document.getElementsByName('removeintra');
-	if (intrabox[0].checked) {
-		removeintra = -1;
-	} else {
-		removeintra = 1;
-	}
-	
-	if (removeintra==-1) {
-		intrabox[0].checked = true;
 	}
 	
 	if (flip==-1) {
@@ -278,7 +248,7 @@ function updateData() {
 	var thresh = document.getElementById('threshold');
 	var threshold = 3;
 	
-	filename = "ABCD_Rest_PF10/PF10subpowerPC" + componentnum + "_1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_27_28.json";
+	filename = "ABCD_Rest_PF10/PF10subpowerpowerPC" + componentnum + "_1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21_22_23_24_25_26_27_28.json";
 	document.getElementsByName('componentnum')[0].innerHTML = "Component " + componentname;
 	//window.alert(filename);
 	svg.selectAll("path.link").remove();
@@ -286,7 +256,7 @@ function updateData() {
 	
 	d3.json(filename, function(classes) {
 	  var nodes = cluster.nodes(packages.root(classes,skipnets,skipsubnets,removenetworks)),
-		  links = packages.imports(nodes,removeintra),
+		  links = packages.imports(nodes),
 		  splines = bundle(links);
 
 	  var path = svg.selectAll("path.link")
@@ -307,11 +277,8 @@ function updateData() {
 	   .append("svg:circle")
 	      .attr("r",5)
 	      .attr("fill",function(d) { return d.color;})
-			//.on("mouseover", mouseover)
-	        //.on("mouseout", mouseout)
-			.on("mouseover",mouseovertext)
-			.on("mouseout",mouseouttext)
-			.on("click",click);
+			.on("mouseover", mouseover)
+	        .on("mouseout", mouseout);
 		  
 		  nodes
 	   .append("svg:text")
@@ -398,24 +365,6 @@ function mouseout(d) {
   svg.selectAll("path.link.targetsubnet-" + d.subnet)
       .classed("target", false);
       //.each(updateNodes("source", false));
-}
-
-function mouseovertext(d) {
-	document.getElementsByName('nodeid')[0].innerHTML = "node " + d.key;	
-}
-
-function mouseouttext(d) {
-	document.getElementsByName('nodeid')[0].innerHTML = "node ";
-}
-	
-function click(d) {
-	svg.selectAll("path.link")
-		.classed("fade",true);
-	svg.selectAll("path.link.target-" + d.key)
-		.classed("target", true);	
-	svg.selectAll("path.link.source-" + d.key)
-		.classed("source", true);
-		
 }
 
 function updateNodes(name, value) {
