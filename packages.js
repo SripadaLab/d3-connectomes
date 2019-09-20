@@ -28,7 +28,7 @@
       }
 
 	  var cursubnet="";
-      classes.forEach(function(d) {
+      classes.forEach(function(d) { 
 		d.subnetstring = "";
 		if (d.subnet!=cursubnet) {
 			cursubnet = d.subnet;
