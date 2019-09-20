@@ -297,7 +297,7 @@ function updateData() {
 	svg.selectAll("path.link").remove();
 	svg.selectAll("g.node").remove();
 	
-	d3.json(filename, function(classes) {
+	d3.json(filename, function(classes) { 
 	  var nodes = cluster.nodes(packages.root(classes,skipnets,skipsubnets,removenetworks)),
 		  links = packages.imports(nodes,removeintra,removeinter),
 		  splines = bundle(links);
