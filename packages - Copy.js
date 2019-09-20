@@ -43,7 +43,7 @@
     },
 
     // Return a list of imports for the given array of nodes.
-    imports: function(nodes,removeintra,removeinter) {
+    imports: function(nodes,removeintra) {
       var map = {},
           imports = [];
 
@@ -59,9 +59,7 @@
 			if (map[i]) {
 			//if (map[d.name].net != map[i].net) {
 				if (removeintra==1 | d.net != map[i].net) {
-					if (removeinter==1 | d.net == map[i].net {
-						imports.push({source: map[d.name], target: map[i], color: d.value[idx], sourcesubnet: d.subnet, targetsubnet: map[i].subnet});
-					}
+					imports.push({source: map[d.name], target: map[i], color: d.value[idx], sourcesubnet: d.subnet, targetsubnet: map[i].subnet});
 				}
 		  //}
 		  }

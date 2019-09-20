@@ -112,6 +112,8 @@ path.arc {
 	<br/>
 	<input type="checkbox" name="removeintra" value="-1" onclick="updateData()" autocomplete="off">Remove Intranetwork?
 	<br/>
+	<input type="checkbox" name="removeinter" value="-1" onclick="updateData()" autocomplete="off">Remove Internetwork?
+	<br/>
 	
 	<br/>
 	
@@ -140,6 +142,7 @@ var loffset=0,
 	skipnets = [],
 	skipsubnets = [],
 	removeintra=1;
+	removeinter=1;
 	
 var splines = [];
 
@@ -216,6 +219,16 @@ function updateData() {
 		intrabox[0].checked = true;
 	}
 	
+	var interbox = document.getElementsByName('removeinter');
+	if (interbox[0].checked) {
+		removeinter = -1;
+	} else {
+		removeinter = 1;
+	}
+	
+	if (removeinter==-1) {
+		interbox[0].checked = true;
+	}	
 	if (flip==-1) {
 		flipbox[0].checked = true;
 	}	
@@ -286,7 +299,7 @@ function updateData() {
 	
 	d3.json(filename, function(classes) {
 	  var nodes = cluster.nodes(packages.root(classes,skipnets,skipsubnets,removenetworks)),
-		  links = packages.imports(nodes,removeintra),
+		  links = packages.imports(nodes,removeintra,removeinter),
 		  splines = bundle(links);
 
 	  var path = svg.selectAll("path.link")
